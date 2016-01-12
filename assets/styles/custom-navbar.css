@@ -1,0 +1,62 @@
+.container-fluid{
+    background-color: #00838F;
+    color: #CDDC39;
+}
+.menu-item{
+    color: #CDDC39;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: #CDDC39;
+}
+div#logo-container {
+    width: 250px;
+    color: #CDDC39;
+}
+div#logo-container .navbar-brand {
+    color: #CDDC39;
+}
+.navbar-default .navbar-brand {
+    color: #CDDC39;
+}
+.content{
+    padding-top: 60px;
+}
+ul#menu-menu-principal{
+    color: #CDDC39;
+}
+ul#menu-menu-principal a {
+    color: #CDDC39;
+    border-bottom: 3px solid #CDDC39;
+    width: 100%;
+}
+ul#menu-menu-principal .active >a {
+    background-color: #CDDC39;
+    color: #00838F;
+}
+ul#menu-menu-principal li:hover:after{
+    border-bottom: 3px solid #00838F;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 100%;
+    transition: .3s ease-in-out;
+}
+ul#menu-items-right > li > a{
+    color: #CDDC39;
+}
+ul#menu-items-right li:hover:after{
+    color: #FFF;
+    border-bottom: 3px solid #CDDC39;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+ul#menu-items-right > li.dropdown > a:focus:after{
+    color: #00838F;
+    background-color: #CDDC39;
+    border-bottom: 3px solid #CDDC39;
+    width: 100%;
+}
