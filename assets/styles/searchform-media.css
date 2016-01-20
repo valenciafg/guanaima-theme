@@ -1,3 +1,10 @@
+#searchForm-media {
+    position:absolute;
+    top:40%;
+    margin: 0px 324px 0px 324px;
+    z-index: 10;
+}
+
 .cf:before, .cf:after{
     content:"";
     display:table;
@@ -16,7 +23,7 @@
 .form-wrapper {
     width: 500px;
     padding: 15px;
-    margin: 150px auto 50px auto;
+
     background: #444;
     background: rgba(0,0,0,.2);
     -moz-border-radius: 10px;
@@ -121,6 +128,9 @@
 }
 
 @media (max-width: 880px) {
+    #searchForm-media{
+        margin: 0 4% 0 4%;
+    }
     .form-wrapper{
         width: 95%;
         padding: 10px;

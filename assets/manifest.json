@@ -22,6 +22,9 @@
     },
     "jquery.js": {
       "bower": ["jquery"]
+    },
+    "flexslider-config.js":{
+      "files": ["scripts/flexslider-scripts/config.js"]
     }
   },
   "config": {

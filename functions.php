@@ -25,4 +25,24 @@ foreach ($sage_includes as $file) {
 
   require_once $filepath;
 }
+
+$my_custom_includes = array(
+    'mvc/controllers/place.php',
+    'mvc/models/post-types/place.php',
+    'mvc/models/taxonomies/location.php',
+    'mvc/models/taxonomies/place_type.php',
+    'mvc/models/taxonomies/media_category.php',
+
+);
+
+foreach ($my_custom_includes as $file) {
+  if (!$filepath = locate_template($file)) {
+    trigger_error(sprintf(__('Error locating %s for inclusion', 'roots'), $file), E_USER_ERROR);
+  }
+
+  require_once $filepath;
+}
+
+$place_api = new Place_API();
+
 unset($file, $filepath);
