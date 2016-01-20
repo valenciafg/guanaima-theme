@@ -32,6 +32,8 @@ $my_custom_includes = array(
     'mvc/models/taxonomies/location.php',
     'mvc/models/taxonomies/place_type.php',
     'mvc/models/taxonomies/media_category.php',
+    'mvc/models/taxonomies/theme.php',
+    'config/filters.php',
 
 );
 

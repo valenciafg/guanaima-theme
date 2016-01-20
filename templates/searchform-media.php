@@ -6,7 +6,8 @@
  * Time: 09:19 AM
  */
 ?>
-<form class="form-wrapper cf" id="searchForm-media">
-  	<input type="text" placeholder="Search here..." required>
-	  <button type="submit">Search</button>
+<form role="search" action="<?php echo site_url('/'); ?>" class="form-wrapper cf" id="searchForm-media">
+  	<input type="text" name="s" placeholder="Search here..." required>
+	<input type="hidden" name="post_type" value="attachment">
+  	<button type="submit">Search</button>
 </form>
