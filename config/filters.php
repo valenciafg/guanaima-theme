@@ -5,17 +5,12 @@
  * Date: 19/01/16
  * Time: 08:50 PM
  */
-
-function attachment_search( $query ) {
-    if ( $query->is_search && isset($_GET['post_type'])) {
-        $type = $_GET['post_type'];
-        if($type == 'attachment'){
-            $query->set('post_type', array('post', 'attachment'));
-            $query->set('post_status', array('publish', 'inherit'));
-        }
+function media_search_template($template){
+    global $wp_query;
+    $post_type = get_query_var('post_type');
+    if( $wp_query->is_search && isset($_GET['s']) && $post_type == 'attachment' ) {
+        return locate_template('templates/searches/content-media.php');
     }
-
-    return $query;
+    return $template;
 }
-
-add_filter( 'pre_get_posts', 'attachment_search' );
+add_filter('template_include', 'media_search_template');

@@ -9,7 +9,8 @@
   "dependencies": {
     "bootstrap-sass": "3.3.6",
     "font-awesome": "~4.5.0",
-    "flexslider": "~2.6.0"
+    "flexslider": "~2.6.0",
+    "blueimp-gallery": "~2.17.0"
   },
   "overrides": {
     "bootstrap-sass": {
@@ -47,6 +48,19 @@
         "./css/*",
         "./fonts/*",
         "./images/*"
+      ]
+    },
+    "blueimp-gallery": {
+      "main": [
+        "./css/blueimp-gallery.min.css",
+        "./js/jquery.blueimp-gallery.min.js",
+        "./img/error.png",
+        "./img/error.svg",
+        "./img/loading.gif",
+        "./img/play-pause.png",
+        "./img/play-pause.svg",
+        "./img/video-play.png",
+        "./img/video-play.svg"
       ]
     }
   }

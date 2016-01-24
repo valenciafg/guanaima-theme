@@ -12,6 +12,7 @@
       if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_name ] ) ) {
         $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
         $menu_items = wp_get_nav_menu_items($menu->term_id);
+        $menu_list = "";
         foreach ( (array) $menu_items as $key => $menu_item ) {
           $title = $menu_item->title;
           $url = $menu_item->url;
@@ -21,7 +22,7 @@
       } else {
         $menu_list = '<a href="#">Menu "' . $menu_name . '" not defined.</a>';
       }
-      echo $menu_list;
+      //echo $menu_list;
       ?>
     </p>
     <p class="footer-company-name"><?php bloginfo('name'); ?> &copy; 2015 - <?php echo date('Y'); ?></p>

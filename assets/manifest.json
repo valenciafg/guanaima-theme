@@ -25,6 +25,9 @@
     },
     "flexslider-config.js":{
       "files": ["scripts/flexslider-scripts/config.js"]
+    },
+    "blueimp-gallery-config.js":{
+      "files": ["scripts/blueimp-gallery-scripts/config.js"]
     }
   },
   "config": {
