@@ -28,6 +28,7 @@ foreach ($sage_includes as $file) {
 
 $my_custom_includes = array(
     'mvc/controllers/place.php',
+    'mvc/controllers/init.php',
     'mvc/models/post-types/place.php',
     'mvc/models/taxonomies/location.php',
     'mvc/models/taxonomies/place_type.php',
@@ -44,7 +45,5 @@ foreach ($my_custom_includes as $file) {
 
   require_once $filepath;
 }
-
-$place_api = new Place_API();
 
 unset($file, $filepath);

@@ -147,4 +147,3 @@ class Place_API{ //extends WP_REST_Controller{
     }
     */
 }
-?>
