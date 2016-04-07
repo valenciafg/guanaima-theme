@@ -21,8 +21,8 @@ $query = new WP_Query( $args );
 //echo $query->request;
 ?>
 <hgroup class="mb20">
-    <h1>Search Results</h1>
-    <h2 class="lead"><strong class="text-danger"><?= $query->post_count?></strong> results were found for the search for <strong class="text-danger"><?=$search?></strong></h2>
+    <h1><?= __('Search Results','sage');?></h1>
+    <h2 class="lead"><strong class="text-danger"><?= $query->post_count?></strong> <?= __('Results were found for the search for','sage');?> <strong class="text-danger"><?=$search?></strong></h2>
 </hgroup>
 <?php
 if ( $query->have_posts() ):
@@ -36,8 +36,8 @@ if ( $query->have_posts() ):
             $img_url = wp_get_attachment_url( $query->post->ID );
             $thumb_url = wp_get_attachment_thumb_url($query->post->ID);
         ?>
-            <a href="<?= $img_url; ?>" title="Banana" data-gallery>
-                <img src="<?= $thumb_url; ?>" alt="Banana">
+            <a href="<?= $img_url; ?>" title="<?= $search;?>" data-gallery>
+                <img src="<?= $thumb_url; ?>" alt="<?= $search;?>">
             </a>
         <?php
         endwhile;
