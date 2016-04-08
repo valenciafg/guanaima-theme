@@ -33,8 +33,10 @@ $args = array(
 'show_ui'                    => true,
 'show_admin_column'          => true,
 'show_in_nav_menus'          => true,
+'show_in_rest'               => true, //IMPORTANT! you cant filter posts by this taxonomy like wp-json/wp/v2/media?filter[location]=<name>
 'show_tagcloud'              => true,
-'query_var'                  => 'location',
+'query_var'                  => 'location', //if you dont specific this value you can not filter out the previous format but this way
+                                            //wp-json/wp/v2/posts/?filter[taxonomy]=location&filter[term]=<name>
 );
 register_taxonomy( 'location', array( 'place','attachment' ), $args );
 

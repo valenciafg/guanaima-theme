@@ -36,6 +36,7 @@ if ( ! function_exists( 'theme_taxonomy' ) ) {
             'show_ui'                    => true,
             'show_admin_column'          => true,
             'show_in_nav_menus'          => true,
+            'show_in_rest'               => true,
             'show_tagcloud'              => true,
             'query_var'                  => 'theme',
         );
